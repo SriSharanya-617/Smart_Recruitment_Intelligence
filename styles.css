@@ -1,111 +1,130 @@
-/* ==========================================
-   GLOBAL
-========================================== */
+/* =====================================================
+   FORCE LIGHT THEME
+===================================================== */
 
-body {
-    background-color: #f4f6f9;
+[data-testid="stAppViewContainer"] {
+    background-color: #f4f6f9 !important;
+}
+
+[data-testid="stHeader"] {
+    background-color: #f4f6f9 !important;
 }
 
 .main {
-    background-color: #f4f6f9;
+    background-color: #f4f6f9 !important;
 }
 
-/* ==========================================
+.block-container {
+    background-color: #f4f6f9 !important;
+}
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+section[data-testid="stSidebar"] {
+    background-color: #ffffff !important;
+}
+
+section[data-testid="stSidebar"] * {
+    color: #111827 !important;
+}
+
+/* =====================================================
    HEADER
-========================================== */
+===================================================== */
 
 .title {
     text-align: center;
-    font-size: 48px;
-    font-weight: 700;
-    color: #111827;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    font-size: 52px;
+    font-weight: 800;
+    color: #111827 !important;
+    margin-bottom: 10px;
 }
 
 .sub-title {
     text-align: center;
-    font-size: 18px;
-    color: #475569;
-    margin-bottom: 25px;
+    font-size: 20px;
+    color: #475569 !important;
+    margin-bottom: 30px;
 }
 
-/* ==========================================
+/* =====================================================
    SECTION HEADERS
-========================================== */
+===================================================== */
 
 .section-header {
-    color: #111827;
-    font-size: 32px;
+    color: #111827 !important;
+    font-size: 34px;
     font-weight: 700;
     margin-top: 25px;
     margin-bottom: 15px;
 }
 
-/* ==========================================
-   STATISTICS CARDS
-========================================== */
+/* =====================================================
+   DATASET STATISTICS CARDS
+===================================================== */
 
 .stat-card {
     background: white;
     padding: 25px;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0px 3px 12px rgba(0,0,0,0.08);
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
     margin-bottom: 15px;
 }
 
 .stat-title {
-    color: #64748b;
+    color: #64748b !important;
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 10px;
 }
 
 .stat-value {
-    color: #2563eb;
+    color: #2563eb !important;
     font-size: 42px;
-    font-weight: 700;
+    font-weight: 800;
 }
 
-/* ==========================================
+/* =====================================================
    BEST CANDIDATE CARD
-========================================== */
+===================================================== */
 
 .top-candidate {
     background: #dcfce7;
-    color: #111827;
+    color: #111827 !important;
     padding: 20px;
     border-radius: 15px;
     border-left: 6px solid #16a34a;
     font-size: 22px;
-    font-weight: 700;
+    font-weight: bold;
 }
 
-/* ==========================================
+/* =====================================================
    SKILL TAGS
-========================================== */
+===================================================== */
 
 .skill-box {
     background: #dbeafe;
-    color: #111827;
-    padding: 8px 14px;
+    color: #111827 !important;
+    padding: 8px 15px;
     border-radius: 10px;
-    margin: 4px;
+    margin: 5px;
     display: inline-block;
     font-weight: 600;
 }
 
-/* ==========================================
+/* =====================================================
    BUTTONS
-========================================== */
+===================================================== */
 
 .stButton > button {
     background-color: #2563eb !important;
     color: white !important;
     border: none !important;
     border-radius: 10px !important;
-    padding: 10px 25px !important;
+    padding: 12px 25px !important;
+    font-size: 16px !important;
     font-weight: 600 !important;
 }
 
@@ -114,342 +133,96 @@ body {
     color: white !important;
 }
 
-/* ==========================================
-   SIDEBAR
-========================================== */
-
-section[data-testid="stSidebar"] {
-    background-color: #ffffff;
-}
-
-section[data-testid="stSidebar"] * {
-    color: #111827 !important;
-}
-
-/* ==========================================
-   FILE UPLOADER
-========================================== */
-
-[data-testid="stFileUploader"] {
-    color: #111827 !important;
-}
-
-[data-testid="stFileUploader"] label {
-    color: #111827 !important;
-}
-
-[data-testid="stFileUploader"] small {
-    color: #111827 !important;
-}
-
-/* ==========================================
+/* =====================================================
    TEXT AREA
-========================================== */
+===================================================== */
 
 textarea {
     background-color: white !important;
-    color: #111827 !important;
+    color: black !important;
     border-radius: 10px !important;
 }
 
-/* ==========================================
-   INPUTS
-========================================== */
+/* =====================================================
+   FILE UPLOADER
+===================================================== */
 
-input {
+[data-testid="stFileUploader"] {
     color: #111827 !important;
 }
 
-/* ==========================================
-   DATAFRAME
-========================================== */
-
-[data-testid="stDataFrame"] {
+[data-testid="stFileUploader"] * {
     color: #111827 !important;
 }
 
-table {
-    color: #111827 !important;
-}
-
-/* ==========================================
+/* =====================================================
    ALERTS
-========================================== */
-
-[data-testid="stSuccess"] {
-    color: #111827 !important;
-}
-
-[data-testid="stSuccess"] p {
-    color: #111827 !important;
-}
+===================================================== */
 
 [data-testid="stInfo"] {
-    color: #111827 !important;
+    background-color: #dbeafe !important;
 }
 
 [data-testid="stInfo"] p {
-    color: #111827 !important;
+    color: black !important;
 }
 
-[data-testid="stWarning"] {
-    color: #111827 !important;
+[data-testid="stSuccess"] {
+    background-color: #dcfce7 !important;
+}
+
+[data-testid="stSuccess"] p {
+    color: black !important;
 }
 
 [data-testid="stWarning"] p {
-    color: #111827 !important;
-}
-
-[data-testid="stError"] {
-    color: #111827 !important;
+    color: black !important;
 }
 
 [data-testid="stError"] p {
-    color: #111827 !important;
+    color: black !important;
 }
 
-/* ==========================================
-   FOOTER
-========================================== */
-
-.footer {
-    text-align: center;
-    color: #64748b;
-    margin-top: 40px;
-    font-size: 14px;
-    padding-bottom: 20px;
-}/* --------------------------------------------------
-   GLOBAL
--------------------------------------------------- */
-
-body {
-    background-color: #f4f6f9;
-}
-
-.main {
-    background-color: #f4f6f9;
-}
-
-/* --------------------------------------------------
-   TITLE
--------------------------------------------------- */
-
-.title {
-    text-align: center;
-    font-size: 48px;
-    font-weight: 700;
-    color: #111827;
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
-.sub-title {
-    text-align: center;
-    font-size: 18px;
-    color: #475569;
-    margin-bottom: 25px;
-}
-
-/* --------------------------------------------------
-   SECTION HEADERS
--------------------------------------------------- */
-
-.section-header {
-    color: #111827;
-    font-size: 30px;
-    font-weight: 700;
-    margin-top: 25px;
-    margin-bottom: 15px;
-}
-
-/* --------------------------------------------------
-   DATASET STAT CARDS
--------------------------------------------------- */
-
-.stat-card {
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0px 3px 12px rgba(0,0,0,0.08);
-    margin-bottom: 15px;
-}
-
-.stat-title {
-    color: #64748b;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.stat-value {
-    color: #2563eb;
-    font-size: 42px;
-    font-weight: 700;
-}
-
-/* --------------------------------------------------
-   BEST CANDIDATE CARD
--------------------------------------------------- */
-
-.top-candidate {
-    background: #dcfce7;
-    color: #111827;
-    padding: 20px;
-    border-radius: 15px;
-    border-left: 6px solid #16a34a;
-    font-size: 22px;
-    font-weight: 700;
-}
-
-/* --------------------------------------------------
-   SKILL TAGS
--------------------------------------------------- */
-
-.skill-box {
-    background: #dbeafe;
-    color: #111827;
-    padding: 8px 14px;
-    border-radius: 10px;
-    margin: 4px;
-    display: inline-block;
-    font-weight: 600;
-}
-
-/* --------------------------------------------------
-   BUTTONS
--------------------------------------------------- */
-
-.stButton > button {
-    background-color: #2563eb;
-    color: white !important;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 25px;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.stButton > button:hover {
-    background-color: #1d4ed8;
-    color: white !important;
-}
-
-/* --------------------------------------------------
-   SIDEBAR
--------------------------------------------------- */
-
-section[data-testid="stSidebar"] {
-    background-color: white;
-}
-
-section[data-testid="stSidebar"] * {
-    color: #111827 !important;
-}
-
-/* --------------------------------------------------
+/* =====================================================
    DATAFRAME
--------------------------------------------------- */
-
-.stDataFrame {
-    color: #111827 !important;
-}
-
-table {
-    color: #111827 !important;
-}
-
-/* --------------------------------------------------
-   ALERTS
--------------------------------------------------- */
-
-div[data-testid="stSuccess"] {
-    color: #111827 !important;
-}
-
-div[data-testid="stInfo"] {
-    color: #111827 !important;
-}
-
-div[data-testid="stWarning"] {
-    color: #111827 !important;
-}
-
-div[data-testid="stError"] {
-    color: #111827 !important;
-}
-
-/* --------------------------------------------------
-   INPUTS
--------------------------------------------------- */
-
-textarea {
-    color: #111827 !important;
-}
-
-input {
-    color: #111827 !important;
-}
-
-/* --------------------------------------------------
-   FORCE DARK TEXT
--------------------------------------------------- */
-
-h1, h2, h3, h4, h5, h6,
-p, span, label, div {
-    color: #111827;
-}
-
-/* --------------------------------------------------
-   FOOTER
--------------------------------------------------- */
-
-.footer {
-    text-align: center;
-    color: #64748b;
-    margin-top: 40px;
-    font-size: 14px;
-    padding-bottom: 20px;
-}
-/* Text Area */
-
-textarea {
-    background-color: white !important;
-    color: black !important;
-}
-
-/* File uploader */
-
-[data-testid="stFileUploader"] {
-    color: black !important;
-}
-
-/* Uploaded filename */
-
-[data-testid="stFileUploader"] * {
-    color: white !important;
-}
-
-/* Button text */
-
-.stButton button {
-    color: white !important;
-}
-
-/* Dataframe */
+===================================================== */
 
 [data-testid="stDataFrame"] {
     color: black !important;
 }
 
-/* Success message */
-
-[data-testid="stSuccess"] p {
+table {
     color: black !important;
 }
 
-/* Info message */
+/* =====================================================
+   FORCE BLACK TEXT
+===================================================== */
 
-[data-testid="stInfo"] p {
-    color: black !important;
+h1, h2, h3, h4, h5, h6 {
+    color: #111827 !important;
+}
+
+label {
+    color: #111827 !important;
+}
+
+p {
+    color: #111827 !important;
+}
+
+span {
+    color: #111827 !important;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+    text-align: center;
+    color: #64748b !important;
+    margin-top: 40px;
+    font-size: 14px;
+    padding-bottom: 20px;
 }
