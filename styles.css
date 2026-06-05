@@ -227,8 +227,32 @@ span {
     padding-bottom: 20px;
 }
 
-/* Force white text only inside uploader */
+/* File uploader text */
 
-[data-testid="stFileUploader"] * {
+[data-testid="stFileUploader"] label {
+    color: white !important;
+}
+
+[data-testid="stFileUploader"] small {
+    color: white !important;
+}
+
+[data-testid="stFileUploader"] p {
+    color: white !important;
+}
+
+[data-testid="stFileUploader"] span {
+    color: white !important;
+}
+
+/* Upload button text */
+
+[data-testid="stFileUploader"] button {
+    color: white !important;
+}
+
+/* Uploaded file name */
+
+[data-testid="stFileUploader"] div {
     color: white !important;
 }
