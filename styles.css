@@ -226,3 +226,9 @@ span {
     font-size: 14px;
     padding-bottom: 20px;
 }
+
+/* Force white text only inside uploader */
+
+[data-testid="stFileUploader"] * {
+    color: white !important;
+}
